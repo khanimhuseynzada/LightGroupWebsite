@@ -1,4 +1,25 @@
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
 .navbar-brand img {
   width: 100px;
   height: 50px;
+}
+
+.navbar {
+  padding-top: 20px;
+}
+
+.navbar .active {
+  border-bottom: 3px solid #FEE715;
+}
+
+.navbar .nav-item {
+  margin: 0 15px;
+}
+
+.navbar .nav-item .nav-link {
+  color: black;
+  font-weight: 500;
 }
