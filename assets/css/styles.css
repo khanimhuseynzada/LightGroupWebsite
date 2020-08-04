@@ -9,6 +9,7 @@ body {
 
 .navbar {
   padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar .active {
@@ -22,4 +23,10 @@ body {
 .navbar .nav-item .nav-link {
   color: black;
   font-weight: 500;
+}
+
+.social a {
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
 }
