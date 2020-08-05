@@ -16,6 +16,8 @@
   <!-- Custom Styles-->
   <link href="assets/sass/style.css" rel="stylesheet" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Google Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
@@ -72,11 +74,11 @@
   <!-- End of the Header -->
 
 
-
+    <!--Banner -->
   <main>
 
     <section class="banner">
-      <section class="banner_content">
+      <section class=" container banner_content">
         <section class="banner_content_left">
           <img src="assets/img/right-app-ui.png" class="img-responsive" alt="">
         </section>
@@ -89,7 +91,7 @@
           </div>
 
           <section class="btn_aplly">
-            <a class="warning_btn  ">Müraciət et</a>
+            <a href="#contact" class="contact-btn warning_btn  ">Müraciət et</a>
           </section>
           <span class="text-center"><i class="far fa-clock"></i></span>
 
@@ -99,6 +101,9 @@
         </section>
       </section>
     </section>
+
+    <!--End of the  Banner -->
+
 
 
     <!-- Services -->
@@ -145,17 +150,16 @@
 
     <!-- End of the Services -->
 
+
     <!-- Portfolios -->
 
+        <div class="portfolios">
 
-    <div class="portfolio-div">
-      <h2 class="content-header d-flex align-items-center justify-content-around">
-        Portfolio
-      </h2>
-
-      <div class="portfolios">
-
-        <div class="portfolio portfolio-right">
+        <h2 class="content-header d-flex align-items-center justify-content-around">
+          Portfolio
+        </h2>
+        
+        <div class="portfolio portfolio-right" data-aos="fade-right">
           <div class="portfolio-text-container  ">
             <div class="portfolio-header">
               <h2>Ynder</h2>
@@ -178,7 +182,7 @@
         </div>
 
 
-        <div class="portfolio portfolio-left">
+        <div class="portfolio portfolio-left" data-aos="fade-left">
           <div class="portfolio-text-container  ">
             <div class="portfolio-header">
               <h2>Logo Pack</h2>
@@ -205,7 +209,7 @@
 
 
 
-        <div class="portfolio portfolio-right">
+        <div class="portfolio portfolio-right" data-aos="fade-right">
           <div class="portfolio-text-container  ">
             <div class="portfolio-header">
               <h2>Logo Pack</h2>
@@ -232,60 +236,102 @@
         </div>
       </div>
     </div>
-      <!-- End of the Portfolios -->
+    <!-- End of the Portfolios -->
 
 
-      <section class="contact">
-        <div class="container">
-          <section class="contact_content">
-            <div class="full-container">
-              <p class="text-center" style="font-size: 1.6rem; font-weight: 600;"> Əlaqə</p>
 
-              <form class="row p-4">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <input type="text" id="name" name="name" class="form-control" required placeholder="Adınız">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" id="email" name="email" class="form-control" required placeholder="Mail">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" id="buisness-name" name="buisness-name" class="form-control" required
-                      placeholder="Biznes adı">
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <input type="text" id="name" name="name" class="form-control" required placeholder="Soyadınız">
-                  </div>
-                  <div class="form-group">
-                    <input type="tel" id="name" name="name" class="form-control" required
-                      placeholder="Telefon Nömrəniz">
-                  </div>
-                  <div class="form-group ">
 
-                    <select id="inputState" class="form-control" required>
-                      <option selected>Biznes növü</option>
-                      <option>App</option>
-                      <option>Branding</option>
-                      <option>SEO</option>
-                    </select>
-                  </div>
-                </div>
+      <!-- About -->
+    <div class="about">
 
-              </form>
-
-              <div class="submitBtn">
-                <button type="submit" style="outline: none; border: none;" class="warning_btn">Göndər</button>
-              </div>
-            </div>
-
-          </section>
+      <div class="about-image ">
+        <img class="about-img-css" src="assets/img/campaign-creators-gMsnXqILjp4-unsplash.png" alt="">
+      </div>
+      <div class="about-right-text ">
+        <div class="about-title">
+          <h3 class="about-title-text">Haqqımızda</h3>
         </div>
-      </section>
+       
+    
+
+          <div class="about-info ">
+
+          
+            <div class="about-right-text-inside">
+              <div class="about-logo">
+                <h2 class="about-logo-text">Light Group</h2>
+              </div>
+            <p class="about-p">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <section class="contact" data-aos="zoom-in" id="contact">
+      <div class="container">
+        <section class="contact_content">
+          <div class="full-container">
+            <p class="text-center" style="font-size: 1.6rem; font-weight: 600;"> Əlaqə</p>
+
+            <form class="row p-4">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" class="form-control" required placeholder="Adınız">
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" class="form-control" required placeholder="Mail">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="buisness-name" name="buisness-name" class="form-control" required
+                    placeholder="Biznes adı">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" class="form-control" required placeholder="Soyadınız">
+                </div>
+                <div class="form-group">
+                  <input type="tel" id="name" name="name" class="form-control" required placeholder="Telefon Nömrəniz">
+                </div>
+                <div class="form-group ">
+
+                  <select id="inputState" class="form-control" required>
+                    <option selected>Biznes növü</option>
+                    <option>App</option>
+                    <option>Branding</option>
+                    <option>SEO</option>
+                  </select>
+                </div>
+              </div>
+
+      
+
+            <div class="submitBtn">
+              <button type="submit" style="outline: none; border: none;" class="warning_btn btn btn-sm">Göndər</button>
+            </div>
+          </div>
+        </form>
+        </section>
+      </div>
+    </section>
 
   </main>
+  <!-- End of the Abobe -->
 
+
+    <!-- Footer -->
   <footer>
     <div class="container">
 
@@ -337,7 +383,7 @@
       </nav>
     </div>
   </footer>
-
+    <!--End of the  Footer -->
 
 
   <!-- Scripts -->
@@ -347,7 +393,11 @@
   <!-- Custom Js -->
   <script src="assets/js/scripts.js"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script>
+  AOS.init();
+</script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 .portfolios {
-
+  margin-top: 120px;
   .portfolio-link a {
     text-decoration: underline;
     font-weight: 700;
@@ -88,15 +88,14 @@
   }
 }
 
-
-
 @media (max-width: 1000px) {
   .portfolios {
-
+    margin-top: 600px;
+    margin-bottom: 1200px;
+    height: 1000px;
     .portfolio {
       max-width: 500px;
       height: 600px;
-
     }
     .portfolio-right {
       .portfolio-text-container {
@@ -126,10 +125,9 @@
 
     .portfolio-left {
       .portfolio-text-container {
-      top: 300px;
+        top: 300px;
         width: 600px;
         height: 250px;
-
 
         .portfolio-header {
           margin: 70px 30px 5px 30px;
@@ -150,43 +148,9 @@
     }
   }
 }
-
-
-
-
-
-    .portfolio-left {
-      .portfolio-text-container {
-      top: 300px;
-        width: 600px;
-        height: 250px;
-
-
-        .portfolio-header {
-          margin: 70px 30px 5px 30px;
-          font-size: 20px;
-        }
-        .portfolio-p {
-          width: auto;
-          margin: 10px 30px 10px 30px;
-          font-size: 12px;
-        }
-      }
-
-      .portfolio-image img {
-        left: -110px;
-        top: -300px;
-        width: 610px;
-      }
-    }
-  }
-}
-
 
 @media (max-width: 500px) {
   .portfolios {
-    
-
     .portfolio {
       max-width: 500px;
       height: 600px;
@@ -219,7 +183,6 @@
     }
 
     .portfolio-left {
-
       .portfolio-text-container {
         top: 230px;
         width: 420px;
@@ -230,7 +193,7 @@
           font-size: 20px;
         }
         .portfolio-p {
-         width: auto;
+          width: auto;
           margin: 10px 30px 10px 30px;
           font-size: 10px;
         }

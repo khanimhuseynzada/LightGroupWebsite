@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth
+}
 body {
     background-color: rgba($color: grey, $alpha: 0.1);
     font-family: "Arimo", sans-serif;
@@ -17,4 +19,8 @@ a{
 .content-header{
     font-size: 40px;
     margin: 30px;
+}
+
+a:hover{
+    text-decoration: none;
 }

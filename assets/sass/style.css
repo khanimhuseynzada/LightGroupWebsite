@@ -39,6 +39,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(128, 128, 128, 0.1);
   font-family: "Arimo", sans-serif;
@@ -59,6 +63,10 @@ a {
 .content-header {
   font-size: 40px;
   margin: 30px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 header .container .navbar {
@@ -84,6 +92,10 @@ header .container .navbar .nav-item .nav-link {
   font-weight: 500;
 }
 
+header .container .navbar .nav-item .nav-link:hover {
+  background-color: rgba(223, 223, 223, 0.5);
+}
+
 header .container .navbar .social a {
   color: black;
   margin: 0 10px;
@@ -91,7 +103,7 @@ header .container .navbar .social a {
 
 .service-div {
   height: 300px;
-  margin: 80px 0;
+  margin-top: 80px;
 }
 
 .service-div .service {
@@ -128,7 +140,7 @@ header .container .navbar .social a {
 }
 
 .portfolios {
-  height: 2000px;
+  margin-top: 120px;
 }
 
 .portfolios .portfolio-link a {
@@ -217,6 +229,11 @@ header .container .navbar .social a {
 }
 
 @media (max-width: 1000px) {
+  .portfolios {
+    margin-top: 600px;
+    margin-bottom: 1200px;
+    height: 1000px;
+  }
   .portfolios .portfolio {
     max-width: 500px;
     height: 600px;
@@ -239,51 +256,6 @@ header .container .navbar .social a {
     top: 20px;
     left: 120px;
     width: 600px;
-  }
-  .portfolios .portfolio-left .portfolio-text-container {
-    top: 300px;
-    width: 600px;
-    height: 250px;
-  }
-  .portfolios .portfolio-left .portfolio-text-container .portfolio-header {
-    margin: 70px 30px 5px 30px;
-    font-size: 20px;
-  }
-  .portfolios .portfolio-left .portfolio-text-container .portfolio-p {
-    width: auto;
-    margin: 10px 30px 10px 30px;
-    font-size: 12px;
-  }
-  .portfolios .portfolio-left .portfolio-image img {
-    left: -110px;
-    top: -300px;
-    width: 610px;
-  }
-}
-
-@media (max-width: 750px) {
-  .portfolios .portfolio {
-    max-width: 500px;
-    height: 600px;
-  }
-  .portfolios .portfolio-right .portfolio-text-container {
-    top: 300px;
-    width: 500px;
-    height: 280px;
-  }
-  .portfolios .portfolio-right .portfolio-text-container .portfolio-p {
-    width: auto;
-    margin: 10px 30px 10px 30px;
-    font-size: 12px;
-  }
-  .portfolios .portfolio-right .portfolio-header {
-    margin: 80px 30px 5px 30px;
-    font-size: 20px;
-  }
-  .portfolios .portfolio-right .portfolio-image img {
-    top: 20px;
-    left: 120px;
-    width: 1000px;
   }
   .portfolios .portfolio-left .portfolio-text-container {
     top: 300px;
@@ -433,8 +405,9 @@ footer .container .navbar .social a {
   margin-top: 60px;
 }
 
-.contact {
-  background-color: grey;
+.banner_content_middle .contact-btn:hover {
+  background-color: black;
+  color: #fee715;
 }
 
 .contact .full-container {
@@ -452,12 +425,6 @@ footer .container .navbar .social a {
 
 .contact .form-control {
   height: calc(2.5em + 1rem + 2px) !important;
-}
-
-.contact .submitBtn {
-  position: absolute;
-  bottom: 20%;
-  left: 42%;
 }
 
 @media (max-width: 768px) {
@@ -482,5 +449,196 @@ footer .container .navbar .social a {
   }
   .banner_content_middle span {
     margin-top: 60px;
+  }
+}
+
+@media (max-width: 500) {
+  .contact {
+    width: 400px;
+  }
+}
+
+.about {
+  height: 700px;
+  position: relative;
+  margin: 50px 0;
+}
+
+.about-title {
+  position: relative;
+  top: -35px;
+  left: 900px;
+  margin: 0;
+  background-color: #ffffff;
+  padding: 20px 50px;
+  border-radius: 50px;
+  width: 210px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.about-right-text {
+  background-color: rgba(223, 223, 223, 0.4);
+  margin-left: 75px;
+  margin-right: 75px;
+  border-radius: 50px;
+  height: 500px;
+  width: 1100px;
+}
+
+.about-right-text .about-info {
+  float: right;
+}
+
+.about-logo {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 55px;
+}
+
+.about-p {
+  text-align: right;
+  width: 500px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  line-height: 28px;
+  font-size: 12px;
+}
+
+.about-image {
+  width: 20px;
+}
+
+.about-image img {
+  width: 600px;
+  height: auto;
+  top: 50px;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  .about {
+    height: 700px;
+    position: relative;
+    margin: 50px 0;
+  }
+  .about-title {
+    position: relative;
+    top: -35px;
+    left: 400px;
+    padding: 20px 50px;
+    width: 210px;
+    font-size: 22px;
+  }
+  .about-right-text {
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 50px;
+    height: 400px;
+    width: 600px;
+  }
+  .about-logo {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  .about-p {
+    text-align: right;
+    width: 300px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    line-height: 15px;
+    font-size: 10px;
+  }
+  .about-image {
+    width: 20px;
+  }
+  .about-image img {
+    width: 400px;
+    height: auto;
+    top: 100px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    height: 700px;
+    position: relative;
+    margin: 50px 0;
+  }
+  .about-title {
+    position: relative;
+    left: 200px;
+    padding: 20px 50px;
+    width: 210px;
+    font-size: 22px;
+  }
+  .about-right-text {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 50px;
+    height: 400px;
+    width: 500px;
+  }
+  .about-logo {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  .about-p {
+    text-align: right;
+    width: 250px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    line-height: 12px;
+    font-size: 10px;
+  }
+  .about-image img {
+    width: 300px;
+    height: auto;
+    top: 180px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 300px) {
+  .about {
+    height: 700px;
+    margin: 50px 0;
+  }
+  .about-title {
+    left: 200px;
+    padding: 20px 50px;
+    width: 210px;
+    font-size: 22px;
+  }
+  .about-right-text {
+    margin-left: 0;
+    margin-right: 0;
+    height: 400px;
+    width: 200px;
+  }
+  .about-logo {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  .about-p {
+    text-align: right;
+    width: 250px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    line-height: 12px;
+    font-size: 10px;
+  }
+  .about-image img {
+    width: 300px;
+    height: auto;
+    top: 180px;
+    position: absolute;
   }
 }

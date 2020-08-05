@@ -12,9 +12,6 @@ header {
     
       }
 
-      
-     
-
         .active {
           border-bottom: 3px solid $yellow-color;
         }
@@ -25,6 +22,10 @@ header {
           .nav-link {
             color: $black-color;
             font-weight: 500;
+          }
+
+          .nav-link:hover {
+        background-color: rgba($color: $grey-color, $alpha: 0.5);
           }
         }
       
