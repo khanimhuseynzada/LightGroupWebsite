@@ -127,22 +127,82 @@ header .container .navbar .social a {
   font-size: 30px;
 }
 
-.portfolio {
-  position: relative;
+.portfolios {
+  height: 2000px;
+}
+
+.portfolios .portfolio {
   max-width: 1160px;
+  height: 600px;
+  margin: 10px 0;
+}
+
+.portfolios .portfolio-right {
+  position: relative;
   padding: 0;
 }
 
-.portfolio .portfolio-text-container {
+.portfolios .portfolio-right .portfolio-text-container {
+  position: absolute;
+  top: 130px;
   width: 1100px;
-  height: auto;
+  height: 450px;
+  border-bottom-right-radius: 30px;
   background-color: rgba(223, 223, 223, 0.4);
 }
 
-.portfolio .portfolio-image img {
-  left: 50px;
-  width: 800px;
+.portfolios .portfolio-right .portfolio-text-container .portfolio-p {
+  width: 320px;
+  margin: 40px 50px 50px 50px;
+}
+
+.portfolios .portfolio-right .portfolio-header {
+  margin: 50px 0 0 50px;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.portfolios .portfolio-right .portfolio-image img {
+  left: 350px;
+  width: 900px;
   height: auto;
+  position: absolute;
+}
+
+.portfolios .portfolio-left {
+  position: relative;
+  padding: 0;
+}
+
+.portfolios .portfolio-left .portfolio-text-container {
+  text-align: right;
+  position: absolute;
+  top: 130px;
+  left: 60px;
+  width: 1100px;
+  height: 450px;
+  border-bottom-left-radius: 30px;
+  background-color: rgba(223, 223, 223, 0.4);
+}
+
+.portfolios .portfolio-left .portfolio-text-container .portfolio-header {
+  text-align: right;
+  margin: 50px 50px 0 0;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.portfolios .portfolio-left .portfolio-text-container .portfolio-p {
+  float: right;
+  text-align: right;
+  width: 320px;
+  margin: 40px 50px 50px 50px;
+}
+
+.portfolios .portfolio-left .portfolio-image img {
+  left: -130px;
+  bottom: 0.5px;
+  width: 900px;
   position: absolute;
 }
 
@@ -151,7 +211,8 @@ footer {
 }
 
 footer .container .navbar {
-  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  background-color: rgba(223, 223, 223, 0);
 }
 
 footer .container .navbar .logo {

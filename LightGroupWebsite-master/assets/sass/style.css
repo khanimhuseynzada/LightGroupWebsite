@@ -1,0 +1,188 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+header .container .navbar .logo {
+  width: 100px;
+  height: 50px;
+}
+
+header .container .navbar .navbar {
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+header .container .navbar .navbar .active {
+  border-bottom: 3px solid #fee715;
+}
+
+header .container .navbar .navbar .nav-item {
+  margin: 0 15px;
+}
+
+header .container .navbar .navbar .nav-item .nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+header .container .navbar .social a {
+  color: black;
+  margin: 0 10px;
+}
+
+.banner {
+  margin-top: 60px;
+}
+
+.banner_content {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.banner_content_middle {
+  padding-top: 80px;
+}
+
+.banner_content_middle h2,
+.banner_content_middle p {
+  color: black;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.banner_content_middle p {
+  margin-top: 20px;
+}
+
+.banner_content_middle .btn_aplly {
+  transform: translate(35%, 50%);
+  padding-top: 20px;
+}
+
+.banner_content_middle span {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 60px;
+}
+
+.contact {
+  background-color: #F3F3F3;
+}
+
+.contact .full-container {
+  padding: 70px;
+  background: #fff;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.contact_content {
+  margin: 0 auto;
+  position: relative;
+  padding: 80px;
+}
+
+.contact .form-control {
+  height: calc(2.5em + 1rem + 2px) !important;
+}
+
+.contact .submitBtn {
+  position: absolute;
+  bottom: 20%;
+  left: 42%;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 40px;
+  }
+  .banner_content {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .banner_content_middle {
+    padding-top: 20px;
+  }
+  .banner_content_middle h2,
+  .banner_content_middle p {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .banner_content_middle .btn_aplly {
+    transform: translate(25%, 50%);
+  }
+  .banner_content_middle span {
+    margin-top: 60px;
+  }
+}
+
+.btn, .btn-border-radius, .warning_btn {
+  display: inline-block;
+  padding: 20px 5px;
+  box-sizing: border-box;
+}
+
+.btn-border-radius, .warning_btn {
+  border-radius: 12px;
+}
+
+.warning_btn {
+  background: #fee715;
+  color: #fff;
+  padding: 20px 60px;
+  font-size: 1.3rem;
+}
