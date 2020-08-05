@@ -1,6 +1,15 @@
 .portfolios {
   height: 2000px;   
 
+  .portfolio-link a{
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $yellow-color;
+  }
   .portfolio{
     max-width: 1160px;
     height: 600px;   
@@ -90,5 +99,8 @@ bottom: 0.5px;
      
       position: absolute;
     }
+
   }
+
+
 }

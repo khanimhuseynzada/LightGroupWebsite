@@ -131,6 +131,16 @@ header .container .navbar .social a {
   height: 2000px;
 }
 
+.portfolios .portfolio-link a {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fee715;
+}
+
 .portfolios .portfolio {
   max-width: 1160px;
   height: 600px;
