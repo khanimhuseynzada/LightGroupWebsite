@@ -325,7 +325,7 @@ header .container .navbar .social a {
 }
 
 footer {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 footer .container .navbar {
@@ -334,8 +334,8 @@ footer .container .navbar {
 }
 
 footer .container .navbar .logo {
-  width: 50px;
-  height: 25px;
+  width: 70px;
+  height: 35px;
 }
 
 footer .container .navbar .nav-item {
@@ -405,9 +405,8 @@ footer .container .navbar .social a {
   margin-top: 60px;
 }
 
-.banner_content_middle .contact-btn:hover {
-  background-color: black;
-  color: #fee715;
+.contact {
+  background-color: grey;
 }
 
 .contact .full-container {
@@ -425,6 +424,12 @@ footer .container .navbar .social a {
 
 .contact .form-control {
   height: calc(2.5em + 1rem + 2px) !important;
+}
+
+.contact .submitBtn {
+  position: absolute;
+  bottom: 20%;
+  left: 42%;
 }
 
 @media (max-width: 768px) {
@@ -452,9 +457,20 @@ footer .container .navbar .social a {
   }
 }
 
-@media (max-width: 500) {
-  .contact {
+@media (max-width: 500px) {
+  .contact .full-container {
+    background: white;
     width: 400px;
+  }
+  .form-group {
+    width: 270px;
+  }
+  .contact_content {
+    padding: 0px;
+  }
+  .submitBtn .warning_btn {
+    margin-left: 15px;
+    padding: 10px 25px;
   }
 }
 
