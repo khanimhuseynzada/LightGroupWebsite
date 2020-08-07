@@ -199,7 +199,7 @@ header .container-fluid .navbar .social a {
 }
 
 .service-div .service {
-  box-shadow: 0px 2px 19px 1px #bdbdbd;
+  box-shadow: 0px 2px 26px -1px #dbdbdb;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -517,7 +517,7 @@ footer .container .navbar .social a {
 }
 
 .contact .full-container {
-  box-shadow: 0px 2px 19px 1px #bdbdbd;
+  box-shadow: 0px 2px 26px -1px #dbdbdb;
   padding: 70px;
   background: white;
   border-top-left-radius: 80px;
