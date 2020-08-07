@@ -1,62 +1,113 @@
 .banner {
-  margin-top: $margin-lg * 3;
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  .banner-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 
-  &_content {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-
-    // &_left,
-    // &_right {
-    //   max-height: 400px;
-    //   max-width: 100%;
-    // }
-    &_middle {
-      padding-top: $padding-lg * 4;
-
+    .banner-text {
       h2,
       p {
+        margin: 15px;
         color: $black-color;
-        font-size: 3.5rem;
+        font-size: 3.9rem;
         font-weight: bold;
       }
-      p {
-        margin-top: 20px;
-      }
-      .btn_aplly {
-        transform: translate(35%, 50%);
-        padding-top: $padding-lg;
-      }
-      span {
-        display: flex;
-        justify-content: center;
-        font-size: 3rem;
-        margin-top: $margin-lg*3;
-      }
     }
+
+    .apply-button {
+      width: 250px;
+      background-color: $yellow-color;
+      border: none;
+      outline: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    .apply-button:hover {
+      background-color: transparent;
+      border: 2px solid $yellow-color;
+      color: $yellow-color;
+      font-weight: 900;
+      font-size: 100;
+    }
+    .banner-icon {
+      font-size: 3rem;
+    }
+  }
+
+  .image-bg {
+    position: absolute;
+    width: 600px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .banner-right {
+    height: 500px;
+    right: 0;
+    position: absolute;
+  }
+
+  .banner-left {
+    height: 500px;
+    left: 0;
+    position: absolute;
   }
 }
 
-
-.contact{
-  background-color: $bg-color;
-  .full-container{
+.contact {
+  .full-container {
+    -webkit-box-shadow: 0px 2px 19px 1px rgba(189, 189, 189, 1);
+    -moz-box-shadow: 0px 2px 19px 1px rgba(189, 189, 189, 1);
+    box-shadow: 0px 2px 19px 1px rgba(189, 189, 189, 1);
     padding: 70px;
     background: $white-color;
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
   }
-  &_content{
+  &_content {
     margin: 0 auto;
-   position: relative;
+    position: relative;
     padding: 80px;
   }
-  .form-control{
+  .form-control {
     height: calc(2.5em + 1rem + 2px) !important;
   }
-  .submitBtn{
+  .submitBtn {
     position: absolute;
     bottom: 20%;
     left: 42%;
+  }
+
+  .button {
+    text-align: center;
+    .send-button {
+      width: 250px;
+      background-color: $yellow-color;
+      border: none;
+      outline: none;
+    }
+
+    .send-button:hover {
+      background-color: transparent;
+      border: 2px solid $yellow-color;
+      color: $yellow-color;
+      font-weight: 900;
+    }
+  }
+
+  .image-bg2 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -90px;
+    z-index: -1;
   }
 }
 @media (max-width: 768px) {
@@ -73,34 +124,38 @@
         h2,
         p {
           color: $black-color;
-          font-size: 2rem;
+          font-size: 1.5rem;
           font-weight: bold;
         }
-        .btn_aplly {
-          transform: translate(25%, 50%);
-        }
+
         span {
           margin-top: $margin-lg * 3;
         }
       }
     }
+
+    .image-bg {
+      width: 400px;
+    }
+  }
+  .contact {
+    .button {
+      .send-button {
+        width: 160px;
+      }
+    }
   }
 }
 
-
 @media (max-width: 500px) {
-  .contact .full-container{
+  .contact .full-container {
     background: white;
     width: 400px;
   }
-  .form-group{
+  .form-group {
     width: 270px;
   }
-  .contact_content{
+  .contact_content {
     padding: 0px;
-  }
-  .submitBtn .warning_btn{
-    margin-left: 15px;
-    padding: 10px 25px;
   }
 }

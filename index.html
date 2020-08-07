@@ -23,10 +23,12 @@
     rel="stylesheet" />
 </head>
 
-<body style="overflow-x: hidden;">
+<body>
+
   <!-- Header -->
   <header>
-    <div class="container">
+    <div class="container-fluid">
+
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="logo">
           <a href="index.html">
@@ -74,33 +76,41 @@
   <!-- End of the Header -->
 
 
-    <!--Banner -->
+  <!--Banner -->
   <main>
 
+
     <section class="banner">
-      <section class=" container banner_content">
-        <section class="banner_content_left">
-          <img src="assets/img/right-app-ui.png" class="img-responsive" alt="">
-        </section>
+      <img src="assets/img/right-app-ui.png" class=" banner-left d-none d-md-block" alt="">
 
-        <section class="banner_content_middle">
+      <img src="assets/img/right-app-ui.png" class="banner-right d-none d-md-block" alt="">
+      <section class=" banner_content">
 
-          <div class="text-center">
-            <h2>Professional Yanaşma</h2>
-            <p>Daha Böyük Gəlir!</p>
-          </div>
 
-          <section class="btn_aplly">
-            <a href="#contact" class="contact-btn warning_btn  ">Müraciət et</a>
-          </section>
-          <span class="text-center"><i class="far fa-clock"></i></span>
 
-        </section>
-        <section class="banner_content_right">
-          <img src="assets/img/right-app-ui.png" class="img-responsive" alt="">
-        </section>
       </section>
+
+      <section class="banner-content">
+
+        <div class="banner-text text-center">
+          <h2>Professional Yanaşma</h2>
+          <p>Daha Böyük Gəlir!</p>
+        </div>
+
+        <div class="button">
+          <button class="btn btn-primary apply-button" type="button" value="">Müraciət et</button>
+        </div>
+
+
+        <div class="banner-icon">
+          <img src="assets/img/mouse.png" alt="">
+        </div>
+      </section>
+      <img class="image-bg" src="assets/img/Path 115.png" alt="">
+
     </section>
+
+
 
     <!--End of the  Banner -->
 
@@ -108,14 +118,14 @@
 
     <!-- Services -->
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="service-div">
         <h2 class="content-header row d-flex align-items-center justify-content-around">
           Xidmətlər
         </h2>
 
         <div class="services row align-items-center justify-content-around">
-          <div class="service col-md-3 col-8">
+          <div class="service col-md-3 col-6">
             <div class="service-image">
               <img src="assets/img/web-programming.png" alt="Web Icon" />
             </div>
@@ -125,7 +135,7 @@
             </div>
           </div>
 
-          <div class="service col-md-3 col-8">
+          <div class="service col-md-3 col-6">
             <div class="service-image">
               <img src="assets/img/coding.png" alt="App Icon" />
             </div>
@@ -135,7 +145,7 @@
             </div>
           </div>
 
-          <div class="service col-md-3 col-8">
+          <div class="service col-md-3 col-6">
             <div class="service-image">
               <img src="assets/img/vector.png" alt="Branding Icon" />
             </div>
@@ -153,95 +163,96 @@
 
     <!-- Portfolios -->
 
-        <div class="portfolios">
+    <div class="portfolios">
 
-        <h2 class="content-header d-flex align-items-center justify-content-around">
-          Portfolio
-        </h2>
-        
-        <div class="portfolio portfolio-right" data-aos="fade-right">
-          <div class="portfolio-text-container  ">
-            <div class="portfolio-header">
-              <h2>Ynder</h2>
-            </div>
+      <h2 class="content-header d-flex align-items-center justify-content-around">
+        Portfolio
+      </h2>
 
-            <p class="portfolio-p">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              Lorem ipsum dolor sit amet, consetetur.
-            </p>
+      <div class="portfolio portfolio-right" data-aos="fade-right">
+        <div class="portfolio-text-container  ">
+          <div class="portfolio-header">
+            <h2>Ynder</h2>
           </div>
 
-          <div class="portfolio-image img-responsive">
-            <img src="assets/img/2252391f6a6be2ad58355f2d0ee199d1.png" alt="">
-          </div>
+          <p class="portfolio-p">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur.
+          </p>
         </div>
 
-
-        <div class="portfolio portfolio-left" data-aos="fade-left">
-          <div class="portfolio-text-container  ">
-            <div class="portfolio-header">
-              <h2>Logo Pack</h2>
-            </div>
-
-
-            <div class="portfolio-image img-responsive">
-              <img src="assets/img/f88d1131e2c593fa99cc48996a5d6396.png" alt="">
-            </div>
-
-
-            <p class="portfolio-p">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              Lorem ipsum dolor sit amet, consetetur.
-            </p>
-          </div>
-
-        </div>
-
-
-
-        <div class="portfolio portfolio-right" data-aos="fade-right">
-          <div class="portfolio-text-container  ">
-            <div class="portfolio-header">
-              <h2>Logo Pack</h2>
-            </div>
-
-            <p class="portfolio-p">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              Lorem ipsum dolor sit amet, consetetur.
-            </p>
-          </div>
-
-          <div class="portfolio-image img-responsive">
-            <img src="assets/img/c2b765b0e812ea712f832981e53323c0.png" alt="">
-          </div>
-        </div>
-
-        <div class="portfolio-link">
-          <a class="" href="portfolio.html">Hamısına Bax</a>
+        <div class="portfolio-image img-responsive">
+          <img src="assets/img/2252391f6a6be2ad58355f2d0ee199d1.png" alt="">
         </div>
       </div>
+
+
+      <div class="portfolio portfolio-left" data-aos="fade-left">
+
+
+        <div class="portfolio-text-container  ">
+          <div class="portfolio-header">
+            <h2>Logo Pack</h2>
+          </div>
+
+          <p class="portfolio-p">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur.
+          </p>
+        </div>
+
+
+        <div class="portfolio-image img-responsive">
+          <img src="assets/img/f88d1131e2c593fa99cc48996a5d6396.png" alt="">
+        </div>
+
+
+      </div>
+
+
+
+      <div class="portfolio portfolio-right" data-aos="fade-right">
+        <div class="portfolio-text-container  ">
+          <div class="portfolio-header">
+            <h2>Logo Pack</h2>
+          </div>
+
+          <p class="portfolio-p">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur.
+          </p>
+        </div>
+
+        <div class="portfolio-image img-responsive">
+          <img src="assets/img/c2b765b0e812ea712f832981e53323c0.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-link">
+        <a class="" href="portfolio.html">Hamısına Bax</a>
+      </div>
+    </div>
 
     <!-- End of the Portfolios -->
 
 
+    <!-- About -->
 
-
-      <!-- About -->
     <div class="about">
 
       <div class="about-image ">
@@ -251,16 +262,16 @@
         <div class="about-title">
           <h3 class="about-title-text">Haqqımızda</h3>
         </div>
-       
-    
 
-          <div class="about-info ">
 
-          
-            <div class="about-right-text-inside">
-              <div class="about-logo">
-                <h2 class="about-logo-text">Light Group</h2>
-              </div>
+
+        <div class="about-info ">
+
+
+          <div class="about-right-text-inside">
+            <div class="about-logo">
+              <h2 class="about-logo-text">Light Group</h2>
+            </div>
             <p class="about-p">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -278,6 +289,13 @@
       </div>
 
     </div>
+
+    <!-- End of the About -->
+
+
+    <!-- Contact -->
+
+
 
     <section class="contact" data-aos="zoom-in" id="contact">
       <div class="container">
@@ -316,22 +334,30 @@
                 </div>
               </div>
 
-      
 
-            <div class="submitBtn">
-              <button type="submit" style="outline: none; border: none;" class="warning_btn btn btn-sm">Göndər</button>
+            </form>
+
+            <div class="button">
+              <button class="btn btn-primary send-button" type="button" value="">Göndər</button>
             </div>
-          </div>
-        </form>
+
         </section>
+
+
       </div>
+
+      <img class="image-bg2" src="assets/img/footer-backgorund-shape.png" alt="">
+
     </section>
+
+    <!-- End of the Contact -->
+
 
   </main>
   <!-- End of the Abobe -->
 
 
-    <!-- Footer -->
+  <!-- Footer -->
   <footer>
     <div class="container">
 
@@ -381,9 +407,11 @@
           <a href="https://www.facebook.com/ewebdesigns/" target="blank" class="fab fa-linkedin"></a>
         </div>
       </nav>
+
     </div>
+
   </footer>
-    <!--End of the  Footer -->
+  <!--End of the  Footer -->
 
 
   <!-- Scripts -->
@@ -396,8 +424,9 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
-  AOS.init();
-</script>
+    AOS.init();
+
+  </script>
 </body>
 
 </html>

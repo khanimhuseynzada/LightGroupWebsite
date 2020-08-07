@@ -1,4 +1,84 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,7 +88,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -16,21 +106,23 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
 blockquote:before, blockquote:after {
-  content: '';
+  content: "";
   content: none;
 }
 
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -69,51 +161,53 @@ a:hover {
   text-decoration: none;
 }
 
-header .container .navbar {
+header .container-fluid .navbar {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-header .container .navbar .logo {
+header .container-fluid .navbar .logo {
   margin-bottom: 10px;
   width: 100px;
   height: 50px;
 }
 
-header .container .navbar .active {
+header .container-fluid .navbar .active {
   border-bottom: 3px solid #fee715;
 }
 
-header .container .navbar .nav-item {
+header .container-fluid .navbar .nav-item {
   margin: 0 15px;
 }
 
-header .container .navbar .nav-item .nav-link {
+header .container-fluid .navbar .nav-item .nav-link {
   color: black;
   font-weight: 500;
 }
 
-header .container .navbar .nav-item .nav-link:hover {
+header .container-fluid .navbar .nav-item .nav-link:hover {
   background-color: rgba(223, 223, 223, 0.5);
 }
 
-header .container .navbar .social a {
+header .container-fluid .navbar .social a {
   color: black;
   margin: 0 10px;
 }
 
 .service-div {
   height: 300px;
-  margin-top: 80px;
+  margin: 80px 0;
 }
 
 .service-div .service {
+  box-shadow: 0px 2px 19px 1px #bdbdbd;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
-  height: 200px;
-  margin: 20px;
+  height: 250px;
+  width: 250px;
+  margin: 25px;
   background-color: white;
   padding: 15px;
 }
@@ -122,15 +216,15 @@ header .container .navbar .social a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background-color: rgba(223, 223, 223, 0.2);
   border-radius: 10px;
 }
 
 .service-div .service .service-image img {
-  max-width: 50px;
-  max-height: 70px;
+  max-width: 70px;
+  max-height: 90px;
   width: auto;
   height: auto;
 }
@@ -154,57 +248,55 @@ header .container .navbar .social a {
 }
 
 .portfolios .portfolio {
-  max-width: 1160px;
   height: 600px;
-  margin: 10px 0;
-}
-
-.portfolios .portfolio-right {
-  position: relative;
+  margin: 50px 0;
   padding: 0;
+  position: relative;
 }
 
-.portfolios .portfolio-right .portfolio-text-container {
+.portfolios .portfolio .portfolio-image img {
+  width: 800px;
+  height: auto;
   position: absolute;
-  top: 130px;
+}
+
+.portfolios .portfolio .portfolio-text-container {
+  position: absolute;
+  top: 100px;
   width: 1100px;
-  height: 450px;
-  border-bottom-right-radius: 30px;
+  height: 500px;
   background-color: rgba(223, 223, 223, 0.4);
 }
 
-.portfolios .portfolio-right .portfolio-text-container .portfolio-p {
+.portfolios .portfolio .portfolio-text-container .portfolio-header {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.portfolios .portfolio .portfolio-text-container .portfolio-p {
   width: 320px;
+}
+
+.portfolios .portfolio-right .portfolio-text-container {
+  left: 0;
+  border-bottom-right-radius: 30px;
+}
+
+.portfolios .portfolio-right .portfolio-text-container .portfolio-p {
   margin: 40px 50px 50px 50px;
 }
 
 .portfolios .portfolio-right .portfolio-header {
   margin: 50px 0 0 50px;
-  font-size: 50px;
-  text-transform: uppercase;
 }
 
 .portfolios .portfolio-right .portfolio-image img {
-  left: 460px;
-  width: 900px;
-  height: auto;
-  position: absolute;
-}
-
-.portfolios .portfolio-left {
-  position: relative;
-  padding: 0;
+  right: 0;
 }
 
 .portfolios .portfolio-left .portfolio-text-container {
-  text-align: right;
-  position: absolute;
-  top: 130px;
-  left: 60px;
-  width: 1100px;
-  height: 450px;
+  right: 0;
   border-bottom-left-radius: 30px;
-  background-color: rgba(223, 223, 223, 0.4);
 }
 
 .portfolios .portfolio-left .portfolio-text-container .portfolio-header {
@@ -217,110 +309,102 @@ header .container .navbar .social a {
 .portfolios .portfolio-left .portfolio-text-container .portfolio-p {
   float: right;
   text-align: right;
-  width: 320px;
   margin: 40px 50px 50px 50px;
 }
 
 .portfolios .portfolio-left .portfolio-image img {
-  left: -130px;
-  bottom: 0.5px;
-  width: 900px;
-  position: absolute;
+  left: 0;
 }
 
 @media (max-width: 1000px) {
-  .portfolios {
-    margin-top: 600px;
-    margin-bottom: 1200px;
-    height: 1000px;
-  }
   .portfolios .portfolio {
-    max-width: 500px;
-    height: 600px;
+    height: 500px;
+    margin: 10px 0;
   }
-  .portfolios .portfolio-right .portfolio-text-container {
-    top: 300px;
+  .portfolios .portfolio .portfolio-image img {
     width: 500px;
-    height: 280px;
   }
-  .portfolios .portfolio-right .portfolio-text-container .portfolio-p {
-    width: auto;
-    margin: 10px 30px 10px 30px;
+  .portfolios .portfolio .portfolio-text-container {
+    top: 60px;
+    width: 700px;
+    height: 300px;
+  }
+  .portfolios .portfolio .portfolio-text-container .portfolio-header {
+    font-size: 40px;
+  }
+  .portfolios .portfolio .portfolio-text-container .portfolio-p {
+    width: 400px;
     font-size: 12px;
-  }
-  .portfolios .portfolio-right .portfolio-header {
-    margin: 80px 30px 5px 30px;
-    font-size: 20px;
-  }
-  .portfolios .portfolio-right .portfolio-image img {
-    top: 20px;
-    left: 120px;
-    width: 600px;
-  }
-  .portfolios .portfolio-left .portfolio-text-container {
-    top: 300px;
-    width: 600px;
-    height: 250px;
-  }
-  .portfolios .portfolio-left .portfolio-text-container .portfolio-header {
-    margin: 70px 30px 5px 30px;
-    font-size: 20px;
-  }
-  .portfolios .portfolio-left .portfolio-text-container .portfolio-p {
-    width: auto;
-    margin: 10px 30px 10px 30px;
-    font-size: 12px;
-  }
-  .portfolios .portfolio-left .portfolio-image img {
-    left: -110px;
-    top: -300px;
-    width: 610px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+  .portfolios {
+    margin-top: 700px;
+  }
   .portfolios .portfolio {
-    max-width: 500px;
-    height: 600px;
-    margin-bottom: 3px;
+    height: 400px;
+    margin: 10px 0;
   }
-  .portfolios .portfolio-right .portfolio-text-container {
-    top: 210px;
-    width: 420px;
-    height: 230px;
+  .portfolios .portfolio .portfolio-image img {
+    width: 450px;
   }
-  .portfolios .portfolio-right .portfolio-text-container .portfolio-p {
-    width: auto;
-    margin: 10px 30px 10px 30px;
+  .portfolios .portfolio .portfolio-text-container {
+    top: 60px;
+    width: 500px;
+    height: 250px;
+  }
+  .portfolios .portfolio .portfolio-text-container .portfolio-header {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .portfolios .portfolio .portfolio-text-container .portfolio-p {
+    width: 230px;
     font-size: 10px;
+    margin-top: 20px;
   }
-  .portfolios .portfolio-right .portfolio-header {
-    margin: 70px 30px 5px 30px;
-    font-size: 20px;
-  }
-  .portfolios .portfolio-right .portfolio-image img {
-    top: 40px;
-    left: 120px;
+}
+
+@media (max-width: 700px) {
+  .portfolios .portfolio .portfolio-image img {
     width: 400px;
   }
-  .portfolios .portfolio-left .portfolio-text-container {
-    top: 230px;
-    width: 420px;
-    height: 230px;
+  .portfolios .portfolio .portfolio-text-container {
+    top: 50px;
+    width: 600px;
+    height: 250px;
   }
-  .portfolios .portfolio-left .portfolio-text-container .portfolio-header {
-    margin: 70px 30px 5px 30px;
-    font-size: 20px;
+  .portfolios .portfolio .portfolio-text-container .portfolio-header {
+    font-size: 30px;
+    margin-top: 30px;
   }
-  .portfolios .portfolio-left .portfolio-text-container .portfolio-p {
-    width: auto;
-    margin: 10px 30px 10px 30px;
+  .portfolios .portfolio .portfolio-text-container .portfolio-p {
+    width: 230px;
     font-size: 10px;
+    margin-top: 20px;
   }
-  .portfolios .portfolio-left .portfolio-image img {
-    left: -90px;
-    bottom: 140px;
-    width: 400px;
+}
+
+@media (max-width: 600px) {
+  .portfolios .portfolio {
+    margin: 60px 0;
+  }
+  .portfolios .portfolio .portfolio-image img {
+    width: 300px;
+  }
+  .portfolios .portfolio .portfolio-text-container {
+    top: 160px;
+    width: 300px;
+    height: 200px;
+  }
+  .portfolios .portfolio .portfolio-text-container .portfolio-header {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .portfolios .portfolio .portfolio-text-container .portfolio-p {
+    width: 200px;
+    font-size: 8px;
+    margin-bottom: 20px;
   }
 }
 
@@ -370,46 +454,70 @@ footer .container .navbar .social a {
 }
 
 .banner {
-  margin-top: 60px;
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-.banner_content {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+.banner .banner-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
-.banner_content_middle {
-  padding-top: 80px;
-}
-
-.banner_content_middle h2,
-.banner_content_middle p {
+.banner .banner-content .banner-text h2,
+.banner .banner-content .banner-text p {
+  margin: 15px;
   color: black;
-  font-size: 3.5rem;
+  font-size: 3.9rem;
   font-weight: bold;
 }
 
-.banner_content_middle p {
-  margin-top: 20px;
+.banner .banner-content .apply-button {
+  width: 250px;
+  background-color: #fee715;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 500;
 }
 
-.banner_content_middle .btn_aplly {
-  transform: translate(35%, 50%);
-  padding-top: 20px;
+.banner .banner-content .apply-button:hover {
+  background-color: transparent;
+  border: 2px solid #fee715;
+  color: #fee715;
+  font-weight: 900;
+  font-size: 100;
 }
 
-.banner_content_middle span {
-  display: flex;
-  justify-content: center;
+.banner .banner-content .banner-icon {
   font-size: 3rem;
-  margin-top: 60px;
 }
 
-.contact {
-  background-color: grey;
+.banner .image-bg {
+  position: absolute;
+  width: 600px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.banner .banner-right {
+  height: 500px;
+  right: 0;
+  position: absolute;
+}
+
+.banner .banner-left {
+  height: 500px;
+  left: 0;
+  position: absolute;
 }
 
 .contact .full-container {
+  box-shadow: 0px 2px 19px 1px #bdbdbd;
   padding: 70px;
   background: white;
   border-top-left-radius: 80px;
@@ -432,6 +540,32 @@ footer .container .navbar .social a {
   left: 42%;
 }
 
+.contact .button {
+  text-align: center;
+}
+
+.contact .button .send-button {
+  width: 250px;
+  background-color: #fee715;
+  border: none;
+  outline: none;
+}
+
+.contact .button .send-button:hover {
+  background-color: transparent;
+  border: 2px solid #fee715;
+  color: #fee715;
+  font-weight: 900;
+}
+
+.contact .image-bg2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -90px;
+  z-index: -1;
+}
+
 @media (max-width: 768px) {
   .banner {
     margin-top: 40px;
@@ -446,14 +580,17 @@ footer .container .navbar .social a {
   .banner_content_middle h2,
   .banner_content_middle p {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-  }
-  .banner_content_middle .btn_aplly {
-    transform: translate(25%, 50%);
   }
   .banner_content_middle span {
     margin-top: 60px;
+  }
+  .banner .image-bg {
+    width: 400px;
+  }
+  .contact .button .send-button {
+    width: 160px;
   }
 }
 
@@ -467,10 +604,6 @@ footer .container .navbar .social a {
   }
   .contact_content {
     padding: 0px;
-  }
-  .submitBtn .warning_btn {
-    margin-left: 15px;
-    padding: 10px 25px;
   }
 }
 
